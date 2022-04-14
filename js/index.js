@@ -13,13 +13,13 @@ function showSpeakers(allowSpeakers) {
   let i = 0;
   speakersList.innerHTML = '';
   speakers.every((speaker) => {
-      if (i > allowSpeakers) {
-          return false;
-        }
-        speakersList.appendChild(speakerTemplate(speaker));
-        i += 1;
-        return true;
-    });
+    if (i > allowSpeakers) {
+      return false;
+    }
+    speakersList.appendChild(speakerTemplate(speaker));
+    i += 1;
+    return true;
+  });
 }
 
 burger.addEventListener('click', () => {
@@ -35,29 +35,29 @@ closeMenu.addEventListener('click', () => {
 moreSpeakers.addEventListener('click', () => {
   speakersList.innerHTML = '';
   if (moreSpeakersToggle) {
-      showSpeakers(1);
-      document.querySelector('[class~=btn-more]').innerHTML = 'More';
-      document.querySelector('[class~=rotate]').classList.remove('pi');
-    } else {
-      showSpeakers(speakers.length);
-      document.querySelector('[class~=btn-more]').innerHTML = 'Less';
-      document.querySelector('[class~=rotate]').classList.add('pi');
-    }
-    moreSpeakersToggle = !moreSpeakersToggle;
+    showSpeakers(1);
+    document.querySelector('[class~=btn-more]').innerHTML = 'More';
+    document.querySelector('[class~=rotate]').classList.remove('pi');
+  } else {
+    showSpeakers(speakers.length);
+    document.querySelector('[class~=btn-more]').innerHTML = 'Less';
+    document.querySelector('[class~=rotate]').classList.add('pi');
+  }
+  moreSpeakersToggle = !moreSpeakersToggle;
 });
 
 function resizeDesktop() {
   if (window.innerWidth >= 768 && !toggleDesktop) {
-      document.getElementById('speakers').parentNode.insertBefore(partners, document.getElementById('speakers').nextSibling);
-      partners.parentNode.insertBefore(license, partners.nextSibling);
-      moreSpeakersToggle = false;
-      moreSpeakers.dispatchEvent(new Event('click'));
-      toggleDesktop = !toggleDesktop;
-    } else if (window.innerWidth < 768 && toggleDesktop) {
-      document.querySelector('body').removeChild(partners);
-      document.querySelector('body').removeChild(license);
-      toggleDesktop = !toggleDesktop;
-    }
+    document.getElementById('speakers').parentNode.insertBefore(partners, document.getElementById('speakers').nextSibling);
+    partners.parentNode.insertBefore(license, partners.nextSibling);
+    moreSpeakersToggle = false;
+    moreSpeakers.dispatchEvent(new Event('click'));
+    toggleDesktop = !toggleDesktop;
+  } else if (window.innerWidth < 768 && toggleDesktop) {
+    document.querySelector('body').removeChild(partners);
+    document.querySelector('body').removeChild(license);
+    toggleDesktop = !toggleDesktop;
+  }
 }
 
 resizeDesktop();
