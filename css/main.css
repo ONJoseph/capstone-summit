@@ -80,20 +80,20 @@ header {
     opacity: 0;
   }
 
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
+}
 
 @keyframes fadeOut {
   0% {
-      opacity: 1;
-    }
+    opacity: 1;
+  }
 
-      100% {
-        opacity: 0;
-      }
-    }
+  100% {
+    opacity: 0;
+  }
+}
 
 .nav-option {
   width: auto;
@@ -338,13 +338,12 @@ header {
 
 @media screen and (min-width: 435px) {
   #main {
-      background-size: cover;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 768px) {
   .mobile-visible {
-      display: none;
-    }
+    display: none;
   }
-  
+} 
