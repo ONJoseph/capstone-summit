@@ -26,8 +26,8 @@ export const speakers = [
     'Actor that is moved by nothing',
     'This man, standing at "a lot of feet tall", weighs about two tons, and his seriousness increases tenfold when he gets inside any vehicle.',
     'rock.gif',
-    ),
-    speaker(
+  ),
+  speaker(
     'The Grim Reaper',
     'Comes and goes as he pleases, and as he doesn\'t',
     'The only thing standing between you and the next life, will you be able to convince him to let you live a little longer?',
