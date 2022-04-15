@@ -6,6 +6,11 @@ Capstone Project #1
 > This project is a demonstration of the HTML, CSS and JavaScript skills learned during first module weeks at micorverse.
 > Its centered around a Conference submit to save the world.
 
+## Project Deployment
+
+- Watch the project live [here](https://onjoseph.github.io/capstone-summit/).
+- Watch a video about the project [here](https://www.loom.com/share/318861fd4081465e81146dc829e5f12b).
+
 ## Built With
 
 - HTML
