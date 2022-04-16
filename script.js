@@ -9,10 +9,9 @@ hamburger.addEventListener('click', () => {
 });
 
 document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-  })
-);
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+}));
 // speakers
 
 const album1 = {
@@ -185,5 +184,4 @@ function changeIcon(value) {
 }
 
 function showButton(button, visible = true) {
-  !visible ? button.classList.add('d-none') : button.classList.remove('d-none');
-}
+  !visible ? button.classList.add('d-none') : button.classList.remove('d-none');}
