@@ -72,7 +72,7 @@ const album7 = {
 };
 
 const album8 = {
-  name: 'Mother's Milk',
+  name: "Mother's Milk",
   release: '1989',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
