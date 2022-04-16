@@ -157,17 +157,17 @@ button.addEventListener('click', () => {
     currentIcon: 'fa-chevron-down',
     newIcon: 'fa-chevron-up',
   };
-  
+
   function changeIcon(value) {
-  const { element, currentIcon, newIcon } = value;
+    const { element, currentIcon, newIcon } = value;
 
-  element.classList.add(newIcon);
-  element.classList.remove(currentIcon);
-}
+    element.classList.add(newIcon);
+    element.classList.remove(currentIcon);
+  }
 
-function showButton(button, visible = true) {
-  !visible ? button.classList.add('d-none') : button.classList.remove('d-none');
-}
+  function showButton(button, visible = true) {
+    !visible ? button.classList.add('d-none') : button.classList.remove('d-none');
+  }
 
   if (initial.showAllContent) {
     showButton(buttonLess);
