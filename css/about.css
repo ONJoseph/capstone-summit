@@ -70,123 +70,147 @@
   display: block;
 }
 
-
 /* Desktops Styles */
 
 @media screen and (min-width: 435px) {
-    #main {
-        background-size: cover;
-    }
+  #main {
+    background-size: cover;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .mobile-visible {
-        display: none;
-    }
-    .desktop-visible {
-        display: block;
-    }
-    #path-icon {
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 8%;
-      margin-top: 12px;
-    }
-    #path-icon>a {
-      display: flex;
-      align-items: center;
-      color: black;
-      margin: 0% 4px;
-    }
-    #about-event {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-      padding: 32px 0%;
-    }
-    .title {
-      width: 54%;
-      text-align: center;
-      margin: 0%;
-      font-weight: unset;
-      font-size: 48px;
-    }
-    #about-event > hr.desktop-visible {
-      margin: 24px 0%;
-    }
-    .introduction {
-      font-size: 13px;
-      margin: 12px 0%;
-      max-width: 75%;
-    }
-    #contact {
-      width: 100%;
-      font-size: 12px;
-    }
-    #about-logo > br {
-      display: none;
-    }
-    #contact > span > br {
-      display: none;
-    }
-    #about-license > div > br {
-      display: none;
-    }
-    #about-logo > div > h2 > br {
-      display: none;
-    }
-    #about-logo > div {
-      width: auto;
-    }
-    #about-logo > div > span {
-      margin: 0%;
-    }
-    #about-logo > div :nth-child(3) {
-      margin-top: 8px;
-    }
-    #about-logo > img {
-      width: 37%;
-    }
-    #about-summits {
-      display: grid;
-      width: 100%;
-      grid-template-areas: 'top top' 'summit13 summit11' '. .';
-      justify-items: center;
-    }
-    #summit-top {
-      grid-area: top;
-      font-size: smaller;
-      width: 100%;
-    }
-    #summit13 {
-      grid-area: summit13;
-      justify-self: end;
-      margin-right: 6px;
-    }
-    #summit11 {
-      grid-area: summit11;
-      justify-self: start;
-      margin-left: 6px;
-    }
-    .summit-img {
-      max-width: 66%;
-    }
-    #about-partners {
-      display: none;
-    }
-    #about-license {
-      background-color: rgb(39, 42, 49);
-      height: 120px;
-      color: white;
-      margin-bottom: 0%;
-    }
-    .rights {
-      justify-content: center;
-    }
-    #about-license > img {
-      width: 25vw;
-      height: auto;
-    }
+  .mobile-visible {
+    display: none;
+  }
+  
+  .desktop-visible {
+    display: block;
+  }
+  
+  #path-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8%;
+    margin-top: 12px;
+  }
+  
+  #path-icon > a {
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: 0% 4px;
+  }
+  
+  #about-event {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 32px 0%;
+  }
+  
+  .title {
+    width: 54%;
+    text-align: center;
+    margin: 0%;
+    font-weight: unset;
+    font-size: 48px;
+  }
+  
+  #about-event > hr.desktop-visible {
+    margin: 24px 0%;
+  }
+  
+  .introduction {
+    font-size: 13px;
+    margin: 12px 0%;
+    max-width: 75%;
+  }
+  
+  #contact {
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  #about-logo > br {
+    display: none;
+  }
+  
+  #contact > span > br {
+    display: none;
+  }
+  
+  #about-license > div > br {
+    display: none;
+  }
+  
+  #about-logo > div > h2 > br {
+    display: none;
+  }
+  
+  #about-logo > div {
+    width: auto;
+  }
+  
+  #about-logo > div > span {
+    margin: 0%;
+  }
+  
+  #about-logo > div :nth-child(3) {
+    margin-top: 8px;
+  }
+  
+  #about-logo > img {
+    width: 37%;
+  }
+  
+  #about-summits {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 'top top' 'summit13 summit11' '. .';
+    justify-items: center;
+  }
+  
+  #summit-top {
+    grid-area: top;
+    font-size: smaller;
+    width: 100%;
+  }
+  
+  #summit13 {
+    grid-area: summit13;
+    justify-self: end;
+    margin-right: 6px;
+  }
+  
+  #summit11 {
+    grid-area: summit11;
+    justify-self: start;
+    margin-left: 6px;
+  }
+  
+  .summit-img {
+    max-width: 66%;
+  }
+  
+  #about-partners {
+    display: none;
+  }
+  
+  #about-license {
+    background-color: rgb(39, 42, 49);
+    height: 120px;
+    color: white;
+    margin-bottom: 0%;
+  }
+  
+  .rights {
+    justify-content: center;
+  }
+  
+  #about-license > img {
+    width: 25vw;
+    height: auto;
+  }
 }
