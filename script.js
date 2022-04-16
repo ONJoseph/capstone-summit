@@ -165,10 +165,6 @@ button.addEventListener('click', () => {
     element.classList.remove(currentIcon);
   }
 
-  function showButton(button, visible = true) {
-    visible ? button.classList.add('d-none') : button.classList.remove('d-none');
-  }
-
   if (initial.showAllContent) {
     showButton(buttonLess);
     showButton(buttonMore, false);
