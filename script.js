@@ -1,108 +1,106 @@
 // hamburger
 
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
 });
 
-document.querySelectorAll(".nav-link").forEach((n) =>
-  n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
   })
 );
-
 // speakers
 
 const album1 = {
-  name: "The Getaway",
-  release: "2016",
+  name: 'The Getaway',
+  release: '2016',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage: "./assets/Images/album10.jpg",
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  featuredImage: './assets/Images/album10.jpg',
 };
 
 const album2 = {
-  name: "Im With You",
-  release: "2011",
+  name: 'Im With You',
+  release: '2011',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage: "./assets/Images/album9.jpg",
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  featuredImage: './assets/Images/album9.jpg',
 };
 
 const album3 = {
-  name: "Stadium Arcadium",
-  release: "2006",
+  name: 'Stadium Arcadium',
+  release: '2006',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage: "./assets/Images/album8.jpg",
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  featuredImage: './assets/Images/album8.jpg',
 };
 
 const album4 = {
-  name: "By the Way",
-  release: "2002",
+  name: 'By the Way',
+  release: '2002',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage: "./assets/Images/album7.jpg",
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  featuredImage: './assets/Images/album7.jpg',
 };
 
 const album5 = {
-  name: "Californication",
-  release: "1999",
+  name: 'Californication',
+  release: '1999',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage: "./assets/Images/album6.jpg",
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  featuredImage: './assets/Images/album6.jpg',
 };
 
 const album6 = {
-  name: "One Hot Minute",
-  release: "1995",
+  name: 'One Hot Minute',
+  release: '1995',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage: "./assets/Images/album5.jpg",
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  featuredImage: './assets/Images/album5.jpg',
 };
 
 const album7 = {
-  name: "Blood Sugar Sex Magik",
-  release: "1991",
+  name: 'Blood Sugar Sex Magik',
+  release: '1991',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage: "./assets/Images/album4.jpg",
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  featuredImage: './assets/Images/album4.jpg',
 };
 
 const album8 = {
-  name: "Mother's Milk",
-  release: "1989",
+  name: 'Mother's Milk',
+  release: '1989',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage: "./assets/Images/albumX.jpg",
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  featuredImage: './assets/Images/albumX.jpg',
 };
 
 const album9 = {
-  name: "The Uplift Mofo Party Plan",
-  release: "1987",
+  name: 'The Uplift Mofo Party Plan',
+  release: '1987',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage: "./assets/Images/album3.jpg",
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  featuredImage: './assets/Images/album3.jpg',
 };
 
 const album10 = {
-  name: "Freaky Styley",
-  release: "1985",
+  name: 'Freaky Styley',
+  release: '1985',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage: "./assets/Images/album2.jpg",
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  featuredImage: './assets/Images/album2.jpg',
 };
 
 const album11 = {
-  name: "The Red Hot Chili Peppers",
-  release: "1984",
+  name: 'The Red Hot Chili Peppers',
+  release: '1984',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  featuredImage: "./assets/Images/album1.jpg",
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  featuredImage: './assets/Images/album1.jpg',
 };
 
 const albumArray = [
@@ -120,10 +118,10 @@ const albumArray = [
 ];
 
 const generateTeam = () => {
-  const placeTeam = document.querySelector(".cardscontainer");
+  const placeTeam = document.querySelector('.cardscontainer');
   albumArray.forEach((cd) => {
     placeTeam.insertAdjacentHTML(
-      "beforeend",
+      'beforeend',
       `<li>
         <div>
         <img class="cdfront" src="${cd.featuredImage}" alt="${cd.name}">
@@ -138,41 +136,41 @@ const generateTeam = () => {
     );
   });
 };
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   generateTeam();
 });
 
 // show more or less
 
-const content = document.querySelector(".content");
-const buttonMore = document.querySelector(".button .show-more");
-const buttonLess = document.querySelector(".button .show-less");
-const button = document.querySelector(".button");
-const arrowIcon = document.querySelector(".button .fas");
+const content = document.querySelector('.content');
+const buttonMore = document.querySelector('.button .show-more');
+const buttonLess = document.querySelector('.button .show-less');
+const button = document.querySelector('.button');
+const arrowIcon = document.querySelector('.button .fas');
 
 const initial = {
   showAllContent: true,
 };
 
-button.addEventListener("click", () => {
+button.addEventListener('click', () => {
   const defaultValue = {
     element: arrowIcon,
-    currentIcon: "fa-chevron-down",
-    newIcon: "fa-chevron-up",
+    currentIcon: 'fa-chevron-down',
+    newIcon: 'fa-chevron-up',
   };
 
   if (initial.showAllContent) {
     showButton(buttonLess);
     showButton(buttonMore, false);
-    content.classList.remove("gradient", "maxHeight");
+    content.classList.remove('gradient', 'maxHeight');
   } else {
     showButton(buttonLess, false);
     showButton(buttonMore);
 
-    defaultValue.currentIcon = "fa-chevron-up";
-    defaultValue.newIcon = "fa-chevron-down";
+    defaultValue.currentIcon = 'fa-chevron-up';
+    defaultValue.newIcon = 'fa-chevron-down';
 
-    content.classList.add("gradient", "maxHeight");
+    content.classList.add('gradient', 'maxHeight');
   }
 
   changeIcon(defaultValue);
@@ -187,5 +185,5 @@ function changeIcon(value) {
 }
 
 function showButton(button, visible = true) {
-  !visible ? button.classList.add("d-none") : button.classList.remove("d-none");
+  !visible ? button.classList.add('d-none') : button.classList.remove('d-none');
 }
