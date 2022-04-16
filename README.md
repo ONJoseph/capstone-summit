@@ -12,7 +12,7 @@ Capstone Project #1
 ## Project Deployment
 
 - Watch the project live [here](https://onjoseph.github.io/capstone-summit/).
-- Watch a video about the project [here](https://www.loom.com/share/789c05bfdf4d40738471b4c5c943c12a).
+- Watch a video about the project [here](https://www.loom.com/share/ae807f1bbc114080ad04c1237c0bbcca).
 
 ## Built With
 
