@@ -4,7 +4,10 @@ Capstone Project #1
 # Capstone Project #1
 
 > This project is a demonstration of the HTML, CSS and JavaScript skills learned during first module weeks at micorverse.
-> Its centered around a Conference submit to save the world.
+> Its centered around a Launch Party for the new RHCP album.
+
+![screenshot](./assets/Images/projectshow.jpg)
+
 
 ## Project Deployment
 
