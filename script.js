@@ -184,4 +184,5 @@ function changeIcon(value) {
 }
 
 function showButton(button, visible = true) {
-  !visible ? button.classList.add('d-none') : button.classList.remove('d-none');}
+  !visible ? button.classList.add('d-none') : button.classList.remove('d-none');
+}
