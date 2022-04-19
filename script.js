@@ -15,63 +15,63 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 }));
 // speakers
 
-const album1 = {
+const album_1 = {
   name: 'The Getaway',
   release: '2016',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  featuredImage: './assets/Images/album10.jpg',
+  featuredImage: './assets/Images/album_10.jpg',
 };
 
-const album2 = {
+const album_2 = {
   name: 'Im With You',
   release: '2011',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  featuredImage: './assets/Images/album9.jpg',
+  featuredImage: './assets/Images/album_9.jpg',
 };
 
-const album3 = {
+const album_3 = {
   name: 'Stadium Arcadium',
   release: '2006',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  featuredImage: './assets/Images/album8.jpg',
+  featuredImage: './assets/Images/album_8.jpg',
 };
 
-const album4 = {
+const album_4 = {
   name: 'By the Way',
   release: '2002',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  featuredImage: './assets/Images/album7.jpg',
+  featuredImage: './assets/Images/album_7.jpg',
 };
 
-const album5 = {
+const album_5 = {
   name: 'Californication',
   release: '1999',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  featuredImage: './assets/Images/album6.jpg',
+  featuredImage: './assets/Images/album_6.jpg',
 };
 
-const album6 = {
+const album_6 = {
   name: 'One Hot Minute',
   release: '1995',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  featuredImage: './assets/Images/album5.jpg',
+  featuredImage: './assets/Images/album_5.jpg',
 };
 
-const album7 = {
+const album_7 = {
   name: 'Blood Sugar Sex Magik',
   release: '1991',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  featuredImage: './assets/Images/album4.jpg',
+  featuredImage: './assets/Images/album_4.jpg',
 };
 
-const album8 = {
+const album_8 = {
   name: "Mother's Milk",
   release: '1989',
   description:
@@ -79,20 +79,20 @@ const album8 = {
   featuredImage: './assets/Images/albumX.jpg',
 };
 
-const album9 = {
+const album_9 = {
   name: 'The Uplift Mofo Party Plan',
   release: '1987',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  featuredImage: './assets/Images/album3.jpg',
+  featuredImage: './assets/Images/album_3.jpg',
 };
 
-const album10 = {
+const album_10 = {
   name: 'Freaky Styley',
   release: '1985',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  featuredImage: './assets/Images/album2.jpg',
+  featuredImage: './assets/Images/album_2.jpg',
 };
 
 const album11 = {
@@ -100,25 +100,25 @@ const album11 = {
   release: '1984',
   description:
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  featuredImage: './assets/Images/album1.jpg',
+  featuredImage: './assets/Images/album_1.jpg',
 };
 
 const albumArray = [
-  album1,
-  album2,
-  album3,
-  album4,
-  album5,
-  album6,
-  album7,
-  album8,
-  album9,
-  album10,
+  album_1,
+  album_2,
+  album_3,
+  album_4,
+  album_5,
+  album_6,
+  album_7,
+  album_8,
+  album_9,
+  album_10,
   album11,
 ];
 
 const generateTeam = () => {
-  const placeTeam = document.querySelector('.cardscontainer');
+  const placeTeam = document.querySelector('.cards-container');
   albumArray.forEach((cd) => {
     placeTeam.insertAdjacentHTML(
       'beforeend',
@@ -155,7 +155,7 @@ const initial = {
 button.addEventListener('click', () => {
   const defaultValue = {
     element: arrowIcon,
-    currentIcon: 'fa-chevron-down',
+    currentIcon: 'fa-shell-down',
     newIcon: 'fa-chevron-up',
   };
 
@@ -175,7 +175,7 @@ button.addEventListener('click', () => {
     showButton(buttonMore);
 
     defaultValue.currentIcon = 'fa-chevron-up';
-    defaultValue.newIcon = 'fa-chevron-down';
+    defaultValue.newIcon = 'fa-shell-down';
 
     content.classList.add('gradient', 'maxHeight');
   }
